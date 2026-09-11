@@ -33,7 +33,7 @@ pipeline {
             steps {
                 script {
                     // Branch অনুযায়ী Port নির্ধারণ
-                    def DEPLOY_PORT = (env.BRANCH_NAME == 'main') ? '8001' : '9001'
+                    def DEPLOY_PORT = (env.BRANCH_NAME == 'main') ? '8002' : '9002'
                     
                     echo "🚀 Triggering Ansible for ${env.BRANCH_NAME} on Port ${DEPLOY_PORT}"
                     
